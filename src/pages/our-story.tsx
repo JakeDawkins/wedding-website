@@ -12,10 +12,10 @@ export default async function AboutPage() {
         </Heading>
         <section className="flex flex-col lg:flex-row gap-10 items-center">
           <img
-            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden rounded"
+            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden lg:rounded"
             src="/images/story-1.jpeg"
           />
-          <div className="flex-1">
+          <div className="flex-1 px-6 lg:px-0">
             <p className="text-pink-500">January 2022</p>
             <Heading level={3} size="xl">
               We meet
@@ -35,12 +35,12 @@ export default async function AboutPage() {
           </div>
         </section>
 
-        <div className="flex w-full items-center justify-center py-10">
+        <div className="hidden lg:flex w-full items-center justify-center py-10">
           <div className="w-[100px] border-t-1 border-t-pink" />
         </div>
 
-        <section className="flex flex-col lg:flex-row gap-10 items-center">
-          <div className="flex-1">
+        <section className="flex flex-col-reverse lg:flex-row gap-10 items-center">
+          <div className="flex-1 px-6 lg:px-0">
             <p className="text-pink-500">January 2022</p>
             <Heading level={3} size="xl">
               The First Date
@@ -57,20 +57,20 @@ export default async function AboutPage() {
             </p>
           </div>
           <img
-            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden rounded"
+            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden lg:rounded"
             src="/images/story-2.jpeg"
           />
         </section>
 
-        <div className="flex w-full items-center justify-center py-10">
+        <div className="hidden lg:flex w-full items-center justify-center py-10">
           <div className="w-[100px] border-t-1 border-t-pink" />
         </div>
         <section className="flex flex-col lg:flex-row gap-10 items-center">
           <img
-            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden rounded"
+            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden lg:rounded"
             src="/images/story-3.jpeg"
           />
-          <div className="flex-1">
+          <div className="flex-1 px-6 lg:px-0">
             <p className="text-pink-500">May 2024</p>
             <Heading level={3} size="xl">
               Seeing the world together
@@ -86,12 +86,12 @@ export default async function AboutPage() {
           </div>
         </section>
 
-        <div className="flex w-full items-center justify-center py-10">
+        <div className="hidden lg:flex w-full items-center justify-center py-10">
           <div className="w-[100px] border-t-1 border-t-pink" />
         </div>
 
-        <section className="flex flex-col lg:flex-row gap-10 items-center">
-          <div className="flex-1">
+        <section className="flex flex-col-reverse lg:flex-row gap-10 items-center">
+          <div className="flex-1 px-6 lg:px-0">
             <p className="text-pink-500">January 22, 2025</p>
             <Heading level={3} size="xl">
               The proposal
@@ -111,7 +111,7 @@ export default async function AboutPage() {
             </p>
           </div>
           <img
-            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden rounded"
+            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden lg:rounded"
             src="/images/story-4.jpeg"
           />
         </section>
