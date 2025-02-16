@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Botanica';
+  src: url('/Botanica.otf');
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/CooperHewitt-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/CooperHewitt-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/CooperHewitt-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/CooperHewitt-HeavyItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/CooperHewitt-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/CooperHewitt-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/CooperHewitt-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/CooperHewitt-SemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/CooperHewitt-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/CooperHewitt-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@import 'tailwindcss';
+
+@theme {
+  /* Fonts */
+  --font-body: 'Cooper Hewitt', sans-serif;
+  --font-heading: 'Botanica', sans-serif;
+
+  /* disable unwanted theme colors */
+  --color-lime-*: initial;
+  --color-fuchsia-*: initial;
+  --color-amber-*: initial;
+  --color-lime-*: initial;
+  --color-emerald-*: initial;
+  --color-teal-*: initial;
+  --color-cyan-*: initial;
+  --color-sky-*: initial;
+  --color-indigo-*: initial;
+  --color-violet-*: initial;
+  --color-fuscia-*: initial;
+  --color-rose-*: initial;
+  --color-slate-*: initial;
+  --color-zinc-*: initial;
+  --color-stone-*: initial;
+
+  /* https://uicolors.app/create */
+  /* brand pink */
+  --color-pink: #fbad8a;
+  --color-pink-50: #fff3ed;
+  --color-pink-100: #fee5d6;
+  --color-pink-200: #fcc7ac;
+  --color-pink-300: #fbad8a;
+  --color-pink-400: #f76d40;
+  --color-pink-500: #f5481a;
+  --color-pink-600: #e62e10;
+  --color-pink-700: #be1f10;
+  --color-pink-800: #971b15;
+  --color-pink-900: #7a1914;
+  --color-pink-950: #420908;
+
+  /* brand green */
+  --color-green: #3b693a;
+  --color-green-50: #f5f9f4;
+  --color-green-100: #e7f2e6;
+  --color-green-200: #cee5cd;
+  --color-green-300: #a6d0a5;
+  --color-green-400: #78b276;
+  --color-green-500: #559453;
+  --color-green-600: #427940;
+  --color-green-700: #3b693a;
+  --color-green-800: #2e4d2e;
+  --color-green-900: #274027;
+  --color-green-950: #112211;
+
+  /* brand gray #cfcbc9 */
+  --color-gray-50: #f8f8f8;
+  --color-gray-100: #f1f0ef;
+  --color-gray-200: #e6e3e2;
+  --color-gray-300: #cfcbc9;
+  --color-gray-400: #b9b3b0;
+  --color-gray-500: #9f9894;
+  --color-gray-600: #877f7b;
+  --color-gray-700: #6f6966;
+  --color-gray-800: #5e5956;
+  --color-gray-900: #514d4b;
+  --color-gray-950: #292726;
+
+  /* primitives */
+  --color-white: #fff;
+  --color-black: var(--color-gray-950);
+
+  /* type scale */
+  /* https://utopia.fyi/type/calculator/?c=320,16,1.25,1240,20,1.25,5,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --step--1: clamp(0.8rem, 0.7304rem + 0.3478vw, 1rem);
+  --step-0: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+  --step-1: clamp(1.25rem, 1.1413rem + 0.5435vw, 1.5625rem);
+  --step-2: clamp(1.5625rem, 1.4266rem + 0.6793vw, 1.9531rem);
+  --step-3: clamp(1.9531rem, 1.7833rem + 0.8492vw, 2.4414rem);
+  --step-4: clamp(2.4414rem, 2.2291rem + 1.0615vw, 3.0518rem);
+  --step-5: clamp(3.0518rem, 2.7864rem + 1.3269vw, 3.8147rem);
+  --text-xs: initial;
+  --text-sm: var(--step--1);
+  --text-base: var(--step-0);
+  --text-lg: var(--step-1);
+  --text-xl: var(--step-2);
+  --text-2xl: var(--step-3);
+  --text-3xl: var(--step-4);
+  --text-4xl: var(--step-5);
+  --text-5xl: initial;
+  --text-6xl: initial;
+  --text-7xl: initial;
+  --text-8xl: initial;
+  --text-9xl: initial;
+}
