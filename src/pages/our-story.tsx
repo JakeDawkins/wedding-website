@@ -10,8 +10,11 @@ export default async function AboutPage() {
         <Heading level={1} size="4xl">
           Our Story
         </Heading>
-        <section className="flex flex-col lg:flex-row gap-10">
-          <div className="flex-1 bg-pink-100" />
+        <section className="flex flex-col lg:flex-row gap-10 items-center">
+          <img
+            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden rounded"
+            src="/images/story-1.jpeg"
+          />
           <div className="flex-1">
             <p className="text-pink-500">January 2022</p>
             <Heading level={3} size="xl">
@@ -32,7 +35,11 @@ export default async function AboutPage() {
           </div>
         </section>
 
-        <section className="flex flex-col lg:flex-row gap-10">
+        <div className="flex w-full items-center justify-center py-10">
+          <div className="w-[100px] border-t-1 border-t-pink" />
+        </div>
+
+        <section className="flex flex-col lg:flex-row gap-10 items-center">
           <div className="flex-1">
             <p className="text-pink-500">January 2022</p>
             <Heading level={3} size="xl">
@@ -49,11 +56,20 @@ export default async function AboutPage() {
               bar, this one seemed to be going the best.
             </p>
           </div>
-          <div className="flex-1 bg-pink-100" />
+          <img
+            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden rounded"
+            src="/images/story-2.jpeg"
+          />
         </section>
 
-        <section className="flex flex-col lg:flex-row gap-10">
-          <div className="flex-1 bg-pink-100" />
+        <div className="flex w-full items-center justify-center py-10">
+          <div className="w-[100px] border-t-1 border-t-pink" />
+        </div>
+        <section className="flex flex-col lg:flex-row gap-10 items-center">
+          <img
+            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden rounded"
+            src="/images/story-3.jpeg"
+          />
           <div className="flex-1">
             <p className="text-pink-500">May 2024</p>
             <Heading level={3} size="xl">
@@ -70,7 +86,11 @@ export default async function AboutPage() {
           </div>
         </section>
 
-        <section className="flex flex-col lg:flex-row gap-10">
+        <div className="flex w-full items-center justify-center py-10">
+          <div className="w-[100px] border-t-1 border-t-pink" />
+        </div>
+
+        <section className="flex flex-col lg:flex-row gap-10 items-center">
           <div className="flex-1">
             <p className="text-pink-500">January 22, 2025</p>
             <Heading level={3} size="xl">
@@ -90,7 +110,10 @@ export default async function AboutPage() {
               proposed to Emily, who through her tears of joy, said yes!
             </p>
           </div>
-          <div className="flex-1 bg-pink-100" />
+          <img
+            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden rounded"
+            src="/images/story-4.jpeg"
+          />
         </section>
       </ScreenWidthContainer>
     </div>
