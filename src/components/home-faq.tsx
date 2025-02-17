@@ -1,0 +1,128 @@
+import { Link } from 'waku';
+import { Heading } from './primitives/heading';
+import { ScreenWidthContainer } from './primitives/screen-width-container';
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from '@headlessui/react';
+import { CaretDown } from '@phosphor-icons/react/dist/ssr';
+
+const questions = [
+  {
+    question: 'What is the dress code?',
+    answer: `Festive. A cocktail dress code, but feel free to have a little more fun! 
+            Wear your floral patterns, bright colors and fun accessories. No shorts, 
+            no jeans, no t-shirts, and no open-toed shoes for men.`,
+  },
+  {
+    question: 'Will there be any other events or activities?',
+    answer: `Yes! We will have a welcome dinner on Friday night (open to
+            everyone, including families) and a brunch on Sunday morning. We are
+            also planning a couple optional activities and excursions around the
+            city for Thursday or Friday, but that will depend on availability
+            and when everyone will be arriving. We will share more details as we
+            get closer to the wedding.`,
+  },
+  {
+    question: 'Are children welcome?',
+    answer: [
+      `We know many people will be making this trip a family vacation, but
+            the wedding and reception are adults-only events. The welcome dinner
+            and brunch are open to families, but we ask that you make
+            arrangements for your children for the wedding and reception.`,
+      `We know this is challenging to arrange. You may consider bringing
+            other family members on the trip or coordinating with other guests
+            and their older children to watch your children for a few hours
+            during the events on Saturday. If you need help figuring this out,
+            please let us know!`,
+    ],
+  },
+  {
+    question: 'What will the weather be like?',
+    answer: `The weather in Barcelona in June is typically warm and sunny, with
+            temperatures ranging from the mid-60s to the mid-70s Fahrenheit
+            (18-25 degrees Celsius). It's a great time to visit the city! Make
+            sure to pack for warm weather in case it's a little extra hot. For
+            more weather data, you can reference the following website:`,
+    link: {
+      title: 'Weather in Barcelona',
+      url: 'https://weatherspark.com/y/47213/Average-Weather-in-Barcelona-Spain-Year-Round',
+    },
+  },
+  {
+    question: 'Will the ceremony and reception be indoors or outdoors?',
+    answer: `The ceremony and reception will be outdoors at the venue. In case of
+            rain or extremely warm weather, we will move events indoors.`,
+  },
+  {
+    question: 'How will we get around?',
+    answer: `Transportation to the hotel from the airport and to/from the venue
+            will be provided. Otherwise, for other activities in the city, we
+            recommend using the metro (which is very safe and easy to use) or
+            Uber. Taxis are also available and accept credit cards.`,
+  },
+  {
+    question: 'Do you have a registry?',
+    answer: `No! We are not asking for gifts. We already have everything we need,
+            and we are very lucky to have you attend our wedding and we are
+            excited to celebrate with you! Your presence is our present.`,
+  },
+];
+
+export function HomeFAQ() {
+  return (
+    <section className="w-full bg-pink" id="barcelona">
+      <ScreenWidthContainer className="flex flex-col w-full gap-10 items-center py-10 px-6">
+        <Heading level={2} size="2xl" className="text-center col-span-1 w-full">
+          Frequently asked questions
+        </Heading>
+        {questions.map((question, index) => (
+          <div className="rounded bg-pink-100 w-full" key={index}>
+            <Disclosure>
+              <DisclosureButton className="group text-start p-6 w-full h-full flex items-center justify-between text-base cursor-pointer">
+                {question.question}
+                <CaretDown
+                  size={20}
+                  className="group-data-[open]:rotate-180 transition-all"
+                />
+              </DisclosureButton>
+              <DisclosurePanel className="p-6 border-l border-l-white flex flex-col gap-4 ">
+                {Array.isArray(question.answer) ? (
+                  question.answer.map((answer, index) => (
+                    <p id={`answer-${index}`}>{answer}</p>
+                  ))
+                ) : (
+                  <p>{question.answer}</p>
+                )}
+                {question.link && (
+                  <a
+                    href={question.link.url}
+                    className="underline"
+                    target="_blank"
+                  >
+                    {question.link.title}
+                  </a>
+                )}
+              </DisclosurePanel>
+            </Disclosure>
+          </div>
+        ))}
+
+        <Heading level={4} size="lg">
+          Didnt find what you were looking for?
+        </Heading>
+        <p className="text-base">
+          We know there will be plenty more questions as the day approaches! For
+          travel and accommodation questions, see the{' '}
+          <Link to="/travel">Travel</Link> page. For any other questions, please
+          contact us at{' '}
+          <a className="underline" href="mailto:dawkinswedding26@gmail.com">
+            dawkinswedding26@gmail.com
+          </a>
+          .
+        </p>
+      </ScreenWidthContainer>
+    </section>
+  );
+}

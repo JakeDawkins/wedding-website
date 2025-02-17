@@ -1,4 +1,6 @@
+import { BridalParty } from '../components/bridal-party';
 import { Hero } from '../components/hero';
+import { HomeFAQ } from '../components/home-faq';
 import { Heading } from '../components/primitives/heading';
 import { ScreenWidthContainer } from '../components/primitives/screen-width-container';
 
@@ -6,10 +8,15 @@ export default async function HomePage() {
   return (
     <>
       <Hero />
-      {/* Barcelons callout */}
-      <section className="" id="barcelona">
-        <ScreenWidthContainer className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center my-10">
-          <Heading level={2} size="2xl" className="text-end col-span-1 w-full">
+
+      {/* Barcelona callout */}
+      <section className="bg-white w-full" id="barcelona">
+        <ScreenWidthContainer className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center py-10 px-6">
+          <Heading
+            level={2}
+            size="2xl"
+            className="text-center col-span-1 w-full"
+          >
             Barcelona
           </Heading>
           <div className="flex flex-col gap-4 col-span-2">
@@ -32,6 +39,12 @@ export default async function HomePage() {
           </div>
         </ScreenWidthContainer>
       </section>
+
+      {/* Bridal Party Callout */}
+      <BridalParty />
+
+      {/* FAQ */}
+      <HomeFAQ />
     </>
   );
 }

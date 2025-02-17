@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { createElement } from 'react';
 
 interface HeadingProps {
@@ -13,7 +14,7 @@ export const Heading = ({
   size,
   ...props
 }: HeadingProps) => {
-  const classes = `font-heading`;
+  const classes = clsx(className, `font-heading`);
 
   return createElement(
     `h${level}`,

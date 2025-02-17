@@ -10,7 +10,7 @@ export const Header = () => {
         </Heading>
       </Link>
 
-      <div className="flex gap-4 items-center">
+      <div className="gap-4 items-center lg:flex hidden">
         <Link to="/our-story" className="font-body font-light hover:underline">
           Our story
         </Link>
@@ -24,6 +24,8 @@ export const Header = () => {
           RSVP
         </Link>
       </div>
+      {/* mobile menu */}
+      <button className="lg:hidden">Menu</button>
     </header>
   );
 };
