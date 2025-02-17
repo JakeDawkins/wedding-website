@@ -1,3 +1,4 @@
+'use client';
 import { Link } from 'waku';
 import { Heading } from './primitives/heading';
 import { ScreenWidthContainer } from './primitives/screen-width-container';
