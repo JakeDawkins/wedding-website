@@ -137,7 +137,7 @@ export function BridalParty() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 col-span-2">
             {partyData.bride.map((person) => {
               return (
-                <div className="flex flex-col gap-2 w-full">
+                <div key={person.name} className="flex flex-col gap-2 w-full">
                   <img className="aspect-square w-full bg-pink opacity:100 lg:opacity-75 hover:opacity-100 focus:opacity-100 rounded" />
                   <p className="font-light">{person.name}</p>
                   <p>{person.role}</p>
@@ -154,7 +154,7 @@ export function BridalParty() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 col-span-2">
             {partyData.groom.map((person) => {
               return (
-                <div className="flex flex-col gap-2 w-full">
+                <div key={person.name} className="flex flex-col gap-2 w-full">
                   <img className="aspect-square w-full bg-pink opacity:100 lg:opacity-75 hover:opacity-100 focus:opacity-100 rounded" />
                   <p>{person.name}</p>
                   <p>{person.role}</p>
@@ -171,7 +171,7 @@ export function BridalParty() {
           <div className="w-1/2 md:w-1/3 col-span-2">
             {partyData.other.map((person) => {
               return (
-                <div className="flex flex-col gap-2 w-full">
+                <div key={person.name} className="flex flex-col gap-2 w-full">
                   <img className="aspect-square w-full bg-pink opacity:100 lg:opacity-75 hover:opacity-100 focus:opacity-100 rounded" />
                   <p>{person.name}</p>
                 </div>

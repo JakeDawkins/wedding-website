@@ -6,13 +6,12 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from '@headlessui/react';
-import { CaretDown } from '@phosphor-icons/react/dist/ssr';
 
 const questions = [
   {
     question: 'What is the dress code?',
-    answer: `Festive. A cocktail dress code, but feel free to have a little more fun! 
-            Wear your floral patterns, bright colors and fun accessories. No shorts, 
+    answer: `Festive. A cocktail dress code, but feel free to have a little more fun!
+            Wear your floral patterns, bright colors and fun accessories. No shorts,
             no jeans, no t-shirts, and no open-toed shoes for men.`,
   },
   {
@@ -73,44 +72,52 @@ const questions = [
 export function HomeFAQ() {
   return (
     <section className="w-full bg-pink" id="barcelona">
-      <ScreenWidthContainer className="flex flex-col w-full gap-10 items-center py-10 px-6">
+      <ScreenWidthContainer className="flex flex-col w-full gap-6 items-center py-10 px-6">
         <Heading level={2} size="2xl" className="text-center col-span-1 w-full">
           Frequently asked questions
         </Heading>
         {questions.map((question, index) => (
-          <div className="rounded bg-pink-100 w-full" key={index}>
-            <Disclosure>
-              <DisclosureButton className="group text-start p-6 w-full h-full flex items-center justify-between text-base cursor-pointer">
-                {question.question}
-                <CaretDown
-                  size={20}
-                  className="group-data-[open]:rotate-180 transition-all"
-                />
-              </DisclosureButton>
-              <DisclosurePanel className="p-6 border-l border-l-white flex flex-col gap-4 ">
-                {Array.isArray(question.answer) ? (
-                  question.answer.map((answer, index) => (
-                    <p id={`answer-${index}`}>{answer}</p>
-                  ))
-                ) : (
-                  <p>{question.answer}</p>
-                )}
-                {question.link && (
-                  <a
-                    href={question.link.url}
-                    className="underline"
-                    target="_blank"
-                  >
-                    {question.link.title}
-                  </a>
-                )}
-              </DisclosurePanel>
-            </Disclosure>
-          </div>
+          <Disclosure
+            as="div"
+            className="rounded border bg-pink-100 w-full"
+            key={`faq-${index}`}
+          >
+            <DisclosureButton className="group text-start p-4 w-full h-full flex gap-6 items-center justify-between text-base cursor-pointer">
+              {question.question}
+              <svg
+                className="w-6 h-6 group-data-[open]:rotate-180 transition-transform duration-200 ease-out flex-shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+              </svg>
+            </DisclosureButton>
+            <DisclosurePanel className="p-6 border-l border-l-white flex flex-col gap-4 ">
+              {Array.isArray(question.answer) ? (
+                question.answer.map((answer, index) => (
+                  <p key={`answer-${index}`}>{answer}</p>
+                ))
+              ) : (
+                <p>{question.answer}</p>
+              )}
+              {question.link && (
+                <a
+                  href={question.link.url}
+                  className="underline"
+                  target="_blank"
+                >
+                  {question.link.title}
+                </a>
+              )}
+            </DisclosurePanel>
+          </Disclosure>
         ))}
 
         <Heading level={4} size="lg">
-          Didnt find what you were looking for?
+          Still have questions?
         </Heading>
         <p className="text-base">
           We know there will be plenty more questions as the day approaches! For
