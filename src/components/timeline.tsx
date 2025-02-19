@@ -127,10 +127,11 @@ export function Timeline() {
             <span className="font-medium">
               Everyone coming needs a passport!
             </span>{' '}
-            Your passport must be valid for 6 months after leaving Europe. So if
-            you&apos;re planning on staying until the end of June 2026, your
-            passport must be valid until the end of December 2026. If you have
-            one, and it expires before then, you must renew it.
+            Your passport must be valid for 6 months after leaving Europe. So,
+            for example, if you&apos;re planning on staying until the end of
+            June 2026, your passport must be valid until the end of December
+            2026. If you have a passport, and it expires before then, you must
+            renew it.
           </p>
           <a
             href="https://travel.state.gov/content/travel/en/passports.html"

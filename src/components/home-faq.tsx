@@ -16,15 +16,6 @@ const questions = [
             no jeans, no t-shirts, and no open-toed shoes for men.`,
   },
   {
-    question: 'Will there be any other events or activities?',
-    answer: `Yes! We will have a welcome dinner on Friday night (open to
-            everyone, including families) and a brunch on Sunday morning. We are
-            also planning a couple optional activities and excursions around the
-            city for Thursday or Friday, but that will depend on availability
-            and when everyone will be arriving. We will share more details as we
-            get closer to the wedding.`,
-  },
-  {
     question: 'Are children welcome?',
     answer: [
       `We know many people will be making this trip a family vacation, but
@@ -37,6 +28,40 @@ const questions = [
             during the events on Saturday. If you need help figuring this out,
             please let us know!`,
     ],
+  },
+  {
+    question: 'Will there be any other events or activities?',
+    answer: `Yes! We will have a welcome dinner on Friday night (open to
+            everyone, including families) and a brunch on Sunday morning. We are
+            also planning a couple optional activities and excursions around the
+            city for Thursday or Friday, but that will depend on availability
+            and when everyone will be arriving. We will share more details as we
+            get closer to the wedding.`,
+  },
+  {
+    question: 'When should I plan to arrive?',
+    answer: `We recommend arriving on Thursday (or earlier!). Jet lag is real, and
+            we want you to be well rested for the wedding, since it will probably 
+            be a pretty late night (the sun will set close to 10PM!) If you're planning on
+            also turning this trip into a vacation, we recommend taking your 
+            vacation time prior to the wedding, so you're well adjusted to the 
+            time change!`,
+    link: {
+      title: '8 Tips to get over jet lag',
+      url: 'https://www.healthline.com/health/healthy-sleep/how-to-get-over-jet-lag#tips',
+    },
+  },
+  {
+    question: 'When should I plan to depart?',
+    answer: `The wedding will last until later Saturday night. Most flights back 
+            to the US from Europe will be in the morning, so we recommend giving
+            yourself an extra day to relax and recharge after the wedding and
+            flying back on Monday. For those staying, we will also have a brunch
+            planned for Sunday morning.`,
+    link: {
+      title: '8 Tips to get over jet lag',
+      url: 'https://www.healthline.com/health/healthy-sleep/how-to-get-over-jet-lag#tips',
+    },
   },
   {
     question: 'What will the weather be like?',
