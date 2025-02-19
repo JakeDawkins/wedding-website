@@ -6,7 +6,7 @@ export function Timeline() {
     <section className="bg-pink-50 w-full" id="timeline">
       <ScreenWidthContainer className="flex flex-col gap-10 lg:gap-10 items-center py-10 px-6">
         <Heading level={2} size="2xl" className="text-center col-span-1 w-full">
-          Timeline
+          Next steps
         </Heading>
 
         {/* Timeline item */}
@@ -75,8 +75,8 @@ export function Timeline() {
           <div className="w-[75px] border-t border-t-pink" />
           <p className="font-body font-light text-base">
             We'll be working to make sure the trip is as smooth and affordable
-            as possible, but we also know international will still be expensive.
-            Please start saving up early if you can!
+            as possible, but we also know international travel will still be
+            expensive. Please start saving up early if you can!
           </p>
         </div>
 
