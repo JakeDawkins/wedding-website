@@ -120,11 +120,20 @@ export function HomeFAQ() {
         <Heading level={4} size="lg">
           Still have questions?
         </Heading>
-        <p className="text-base">
+        {/* <p className="text-base">
           We know there will be plenty more questions as the day approaches! For
           travel and accommodation questions, see the{' '}
           <Link to="/travel">Travel</Link> page. For any other questions, please
           contact us at{' '}
+          <a className="underline" href="mailto:dawkinswedding26@gmail.com">
+            dawkinswedding26@gmail.com
+          </a>
+          .
+        </p> */}
+        <p className="text-base">
+          We're still very early in the planning process, so we will have a lot
+          more information as time goes on, but if you have any pressing
+          concerns in the meantime, please let us know by contacting us at{' '}
           <a className="underline" href="mailto:dawkinswedding26@gmail.com">
             dawkinswedding26@gmail.com
           </a>

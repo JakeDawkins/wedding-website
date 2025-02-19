@@ -78,13 +78,6 @@ export function Timeline() {
             as possible, but we also know international will still be expensive.
             Please start saving up early if you can!
           </p>
-          <a
-            href="https://travel.state.gov/content/travel/en/passports.html"
-            target="_blank"
-            className="text-base underline"
-          >
-            More information about passports
-          </a>
         </div>
 
         {/* Timeline item */}
@@ -332,6 +325,157 @@ export function Timeline() {
             We will be searching for the best deals on accommodation, and are
             planning on booking a block of hotel rooms. We will send out more
             information about this as we learn more.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-4 col-span-2">
+          {/* item heading */}
+          <div className="flex flex-row">
+            <div className="flex flex-row gap-4">
+              {/* icon on left */}
+              <svg
+                width={48}
+                height={48}
+                className="text-pink fill-pink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none" />
+                <path
+                  d="M128,56l32-8s26.48,41.35,38.9,87.71a32,32,0,1,1-61.82,16.56C124.66,105.91,128,56,128,56Z"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                />
+                <line
+                  x1="176.27"
+                  y1="174.9"
+                  x2="190.63"
+                  y2="228.47"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                />
+                <line
+                  x1="216"
+                  y1="221.67"
+                  x2="168"
+                  y2="234.53"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                />
+                <path
+                  d="M128,32,96,24S69.52,65.35,57.1,111.71a32,32,0,1,0,61.82,16.56C130.29,81.8,128,32,128,32Z"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                />
+                <line
+                  x1="79.73"
+                  y1="150.9"
+                  x2="65.37"
+                  y2="204.47"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                />
+                <line
+                  x1="40"
+                  y1="197.67"
+                  x2="88"
+                  y2="210.53"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                />
+                <path
+                  d="M128.49,97.88,179.94,85"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                />
+                <path
+                  d="M126.92,75.73,75.23,62.81"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                />
+                <line
+                  x1="192"
+                  y1="40"
+                  x2="208"
+                  y2="32"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                />
+                <line
+                  x1="208"
+                  y1="72"
+                  x2="224"
+                  y2="72"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                />
+                <line
+                  x1="56"
+                  y1="32"
+                  x2="40"
+                  y2="24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                />
+                <line
+                  x1="40"
+                  y1="64"
+                  x2="24"
+                  y2="64"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="16"
+                />
+              </svg>
+              {/* Title and subtitle on the right */}
+              <div className="flex w-full flex-col">
+                <Heading level={3} size="lg">
+                  Celebrate
+                </Heading>
+                <p className="text-base">June 20, 2026</p>
+              </div>
+            </div>
+          </div>
+          <div className="w-[75px] border-t border-t-pink" />
+          <p className="font-body font-light text-base">
+            We will be planning some events around the day of the wedding,
+            including a welcome dinner and other activities. More information
+            will be sent out as we put together the schedule.
           </p>
         </div>
       </ScreenWidthContainer>
