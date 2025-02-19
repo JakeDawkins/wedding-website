@@ -14,9 +14,7 @@ export function Hero() {
       {/* Text box */}
       <ScreenWidthContainer className="flex z-10 items-center justify-center text-center">
         <div className="p-6 bg-pink-50/70 flex items-center justify-center flex-col gap-4 rounded">
-          <p className="font-body font-light text-lg">
-            Come celebrate with us!
-          </p>
+          <p className="font-body font-light text-lg">Save the date!</p>
           <Heading level={1} size="4xl">
             We're getting married!
           </Heading>
