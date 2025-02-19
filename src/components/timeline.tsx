@@ -76,7 +76,7 @@ export function Timeline() {
           <p className="font-body font-light text-base">
             We'll be working to make sure the trip is as smooth and affordable
             as possible, but we also know international travel will still be
-            expensive. Please start saving up early if you can!
+            expensive.
           </p>
         </div>
 

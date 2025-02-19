@@ -10,7 +10,7 @@ export function Hero() {
         className="w-full object-cover absolute inset-0 aspect-square md:aspect-[3/2] lg:aspect-[2]"
       />
       {/* overlay */}
-      <div className="absolute inset-0 bg-pink-200/20" />
+      <div className="absolute inset-0 bg-pink-200/10" />
       {/* Text box */}
       <ScreenWidthContainer className="flex z-10 items-center justify-center text-center">
         <div className="p-6 bg-pink-50/70 flex items-center justify-center flex-col gap-4 rounded">
