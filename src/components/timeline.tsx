@@ -114,7 +114,7 @@ export function Timeline() {
               {/* Title and subtitle on the right */}
               <div className="flex w-full flex-col">
                 <Heading level={3} size="lg">
-                  Passports - Check or apply
+                  Check or apply for Passports
                 </Heading>
                 <p className="text-base">
                   As soon as posisble - Don&apos;t wait for this!
@@ -201,7 +201,7 @@ export function Timeline() {
               {/* Title and subtitle on the right */}
               <div className="flex w-full flex-col">
                 <Heading level={3} size="lg">
-                  RSVPs go out
+                  RSVP
                 </Heading>
                 <p className="text-base">March, 2025</p>
               </div>
@@ -210,7 +210,7 @@ export function Timeline() {
           <div className="w-[75px] border-t border-t-pink" />
           <p className="font-body font-light text-base">
             We're still finalizing some plans and getting some more information
-            on how best to plan for accommodation and travel, but once we have
+            on how best to plan for accommodations and travel, but once we have
             more information, we'll be sending out RSVPs. When you receive
             yours, please try to answer as soon as possible!
           </p>
@@ -314,7 +314,7 @@ export function Timeline() {
               {/* Title and subtitle on the right */}
               <div className="flex w-full flex-col">
                 <Heading level={3} size="lg">
-                  Book accommodation
+                  Book accommodations
                 </Heading>
                 <p className="text-base">TBD</p>
               </div>
@@ -322,7 +322,7 @@ export function Timeline() {
           </div>
           <div className="w-[75px] border-t border-t-pink" />
           <p className="font-body font-light text-base">
-            We will be searching for the best deals on accommodation, and are
+            We will be searching for the best deals on accommodations, and are
             planning on booking a block of hotel rooms. We will send out more
             information about this as we learn more.
           </p>
