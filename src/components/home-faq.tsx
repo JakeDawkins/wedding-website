@@ -11,7 +11,7 @@ import {
 const questions = [
   {
     question: 'What is the dress code?',
-    answer: `Festive. A cocktail dress code, but feel free to have a little more fun!
+    answer: `Festive! A cocktail dress code, but feel free to have a little more fun!
             Wear your floral patterns, bright colors and fun accessories. No shorts,
             no jeans, no t-shirts, and no open-toed shoes for men.`,
   },
