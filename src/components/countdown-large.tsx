@@ -37,7 +37,7 @@ export function CountdownLarge() {
   if (!splitSegments) return null;
 
   return (
-    <div className="flex flex-row gap-4 h-32 items-center justify-center w-full">
+    <div className="flex flex-row gap-4 h-32 items-center justify-center w-full flex-wrap">
       {splitSegments.slice(0, 4).map((segment, i) => {
         return (
           <div key={i}>

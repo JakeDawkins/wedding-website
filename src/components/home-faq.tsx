@@ -142,7 +142,7 @@ export function HomeFAQ() {
           </Disclosure>
         ))}
 
-        <Heading level={4} size="lg">
+        <Heading level={3} size="lg">
           Still have questions?
         </Heading>
         {/* <p className="text-base">

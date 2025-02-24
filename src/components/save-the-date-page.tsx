@@ -12,18 +12,21 @@ export async function SaveTheDatePage() {
         name="description"
         content="Save the date for Emily and Jake's wedding in Barcelona. June 20, 2026"
       />
-      <Hero />
 
-      <CountdownLarge />
+      <div className="w-full max-w-full overflow-hidden">
+        <Hero />
 
-      {/* Barcelona callout */}
-      <BarcelonaSection />
+        <CountdownLarge />
 
-      {/* Timeline */}
-      <Timeline />
+        {/* Barcelona callout */}
+        <BarcelonaSection />
 
-      {/* FAQ */}
-      <HomeFAQ />
+        {/* Timeline */}
+        <Timeline />
+
+        {/* FAQ */}
+        <HomeFAQ />
+      </div>
     </>
   );
 }

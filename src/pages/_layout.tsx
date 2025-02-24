@@ -11,7 +11,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   // const data = await getData();
 
   return (
-    <div className="bg-pink-50 font-body font-light">
+    <div className="bg-pink-50 font-body font-light max-w-full overflow-hidden">
       <meta
         name="description"
         content={'Celebrate with Emily & Jake in Barcelona! June 20, 2026'}

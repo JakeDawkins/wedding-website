@@ -142,6 +142,13 @@
   --step-3: clamp(1.9531rem, 1.7833rem + 0.8492vw, 2.4414rem);
   --step-4: clamp(2.4414rem, 2.2291rem + 1.0615vw, 3.0518rem);
   --step-5: clamp(3.0518rem, 2.7864rem + 1.3269vw, 3.8147rem);
+  --step--1-min-abs: 12.8px;
+  --step-0-min-abs: 16px;
+  --step-1-min-abs: 20px;
+  --step-2-min-abs: 25px;
+  --step-3-min-abs: 31.2496px;
+  --step-4-min-abs: 39.0624px;
+  --step-5-min-abs: 48.8288px;
   --text-xs: initial;
   --text-sm: var(--step--1);
   --text-base: var(--step-0);
@@ -155,4 +162,8 @@
   --text-7xl: initial;
   --text-8xl: initial;
   --text-9xl: initial;
+}
+
+* {
+  overflow-wrap: break-word;
 }
