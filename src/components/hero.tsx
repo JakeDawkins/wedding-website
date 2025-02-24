@@ -7,7 +7,7 @@ export function Hero() {
       <img
         src="/images/hero.jpeg"
         alt="Aerial view of the La Baronia venue in Spain"
-        className="w-full h-full object-cover absolute inset-0 md:aspect-[3/2] lg:aspect-[2] min-h-fit"
+        className="w-full h-full object-cover object-center absolute inset-0 md:aspect-[3/2] lg:aspect-[2] min-h-fit"
       />
       {/* overlay */}
       <div className="absolute inset-0 bg-pink-200/10" />
