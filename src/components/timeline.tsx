@@ -204,7 +204,7 @@ export function Timeline() {
                 <Heading level={3} size="lg">
                   RSVP
                 </Heading>
-                <p className="text-base">March, 2025</p>
+                <p className="text-base">April, 2025</p>
               </div>
             </div>
           </div>
