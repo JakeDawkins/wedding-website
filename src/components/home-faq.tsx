@@ -16,18 +16,45 @@ const questions = [
             no jeans, no t-shirts, and no open-toed shoes for men.`,
   },
   {
-    question: 'Are children welcome?',
-    answer: [
-      `We know many people will be making this trip a family vacation, but
-            the wedding and reception are adults-only events. The welcome dinner
-            and brunch are open to families, but we ask that you make
-            arrangements for your children for the wedding and reception.`,
-      `We know this is challenging to arrange. You may consider bringing
-            other family members on the trip or coordinating with other guests
-            and their older children to watch your children for a few hours
-            during the events on Saturday. If you need help figuring this out,
-            please let us know!`,
-    ],
+    question: 'Are my kids welcome?',
+    answerComponent: () => {
+      return (
+        <>
+          <p>
+            We know many people will be making this trip a family vacation, but
+            because of venue size, the wedding and reception are invite-only
+            events.{' '}
+            <span className="underline">
+              This means that kids, whether they be young or adults, are unable
+              to attend the ceremony and reception unless they have received
+              their own invitation
+            </span>
+            . The welcome dinner and brunch are open to families, but we ask
+            that you make arrangements for your children for the wedding and
+            reception.
+          </p>
+          <p className="">
+            We know this is challenging to arrange. You may consider:
+          </p>
+          <ul className="list-disc list-inside">
+            <li>
+              Leaving young children at home with grandparents/other relatives,
+              and using this time as a couples vacation!
+            </li>
+            <li>Bringing other family members on the trip</li>
+            <li>
+              Coordinating with other guests and their older children to watch
+              your children for a few hours during the events on Saturday.
+            </li>
+            <li>
+              We would also be happy to recommend activities and tours for your
+              adult children.
+            </li>
+          </ul>
+          <p>If you need help figuring this out, please let us know!</p>
+        </>
+      );
+    },
   },
   {
     question: 'Will there be any other events or activities?',
@@ -122,6 +149,7 @@ export function HomeFAQ() {
               </svg>
             </DisclosureButton>
             <DisclosurePanel className="p-6 flex flex-col gap-4 ">
+              {question.answerComponent ? <question.answerComponent /> : null}
               {Array.isArray(question.answer) ? (
                 question.answer.map((answer, index) => (
                   <p key={`answer-${index}`}>{answer}</p>
