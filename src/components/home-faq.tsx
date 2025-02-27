@@ -109,10 +109,11 @@ const questions = [
   },
   {
     question: 'How will we get around?',
-    answer: `Transportation to the hotel from the airport and to/from the venue
-            will be provided. Otherwise, for other activities in the city, we
-            recommend using the metro (which is very safe and easy to use) or
-            Uber. Taxis are also available and accept credit cards.`,
+    answer: `Transportation to and from the venue will be provided. Transportation
+            to and from the airport will depend on when people arrive, to be
+            announced later. Otherwise, for other activities in the city, we 
+            recommend using the metro (which is very safe and easy to use) or Uber. 
+            Taxis are also available and accept credit cards.`,
   },
   {
     question: 'Do you have a registry?',
