@@ -1,122 +1,84 @@
 import { Heading } from './primitives/heading';
 import { ScreenWidthContainer } from './primitives/screen-width-container';
 
-const xpartyData = {
+const partyData = {
   bride: [
     {
       name: 'Kayla Gaudet',
-      photo: '',
+      photo: '/images/party/kayla.jpeg',
       role: 'Co-Maid of Honor',
     },
     {
       name: 'Tara Gaudet',
-      photo: '',
+      photo: '/images/party/tara.jpeg',
       role: 'Co-Maid of Honor',
     },
     {
       name: 'Lauren Jachimczyk',
-      photo: '',
+      photo: '/images/party/lauren.jpeg',
+      role: null,
     },
     {
       name: 'Christine Gaudet',
-      photo: '',
+      photo: '/images/party/christine.jpeg',
+      role: null,
     },
     {
       name: 'Melissa Gaudet',
-      photo: '',
+      photo: '/images/party/melissa.jpeg',
+      role: null,
     },
   ],
   groom: [
-    {
-      name: 'Jeff Dawkins',
-      photo: '',
-      role: 'Co-Best Man',
-    },
     {
       name: 'James Baxley',
-      photo: 'Co-Best Man',
-    },
-    {
-      name: 'Davis Fortier',
-      photo: '',
-    },
-    {
-      name: 'Ethan Lander',
-      photo: '',
-    },
-    {
-      name: 'Brian Gaudet',
-      photo: '',
-    },
-    {
-      name: 'Jonathan Gaudet',
-      photo: '',
-    },
-  ],
-  other: [
-    {
-      name: 'Josh Garcia',
-      photo: '',
-    },
-  ],
-};
-
-const partyData = {
-  bride: [
-    {
-      name: 'Person 1',
-      photo: '',
-      role: 'Maid of Honor',
-    },
-    {
-      name: 'Person 2',
-      photo: '',
-      // role: 'Co-Maid of Honor',
-    },
-    {
-      name: 'Person 3',
-      photo: '',
-    },
-    {
-      name: 'Person 4',
-      photo: '',
-    },
-    {
-      name: 'Person 5',
-      photo: '',
-    },
-  ],
-  groom: [
-    {
-      name: 'Person 6',
-      photo: '',
+      photo: '/images/party/james.jpeg',
       role: 'Best Man',
     },
     {
-      name: 'Person 7',
-      // photo: 'Co-Best Man',
+      name: 'Davis Fortier',
+      photo: '/images/party/davis.jpeg',
+      role: null,
     },
     {
-      name: 'Person 8',
-      photo: '',
+      name: 'Ethan Lander',
+      photo: '/images/party/ethan.jpeg',
+      role: null,
     },
     {
-      name: 'Person 9',
-      photo: '',
+      name: 'Brian Gaudet',
+      photo: '/images/party/brian.jpeg',
+      role: null,
     },
     {
-      name: 'Person 10',
-      photo: '',
-    },
-    {
-      name: 'Person 11',
-      photo: '',
+      name: 'Jonathan Gaudet',
+      photo: '/images/party/jonathan.jpeg',
+      role: null,
     },
   ],
-  other: [
+  officiant: [
     {
-      name: 'Person 12',
-      photo: '',
+      name: 'Josh Garcia',
+      photo: '/images/party/josh.jpeg',
+      role: null,
+      // role: 'Officiant',
+    },
+  ],
+  others: [
+    {
+      name: 'Joan Gaudet',
+      photo: '/images/party/joan.jpeg',
+      role: 'Flower Girl',
+    },
+    {
+      name: 'Michael Gaudet',
+      photo: '/images/party/michael.jpeg',
+      role: 'Ring Bearer',
+    },
+    {
+      name: 'Dylan Gaudet',
+      photo: '/images/party/dylan.jpeg',
+      role: 'Ring Bearer',
     },
   ],
 };
@@ -136,13 +98,7 @@ export function BridalParty() {
           {/* person grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 col-span-2">
             {partyData.bride.map((person) => {
-              return (
-                <div key={person.name} className="flex flex-col gap-2 w-full">
-                  <img className="aspect-square w-full bg-pink opacity:100 lg:opacity-75 hover:opacity-100 focus:opacity-100 rounded" />
-                  <p className="font-light">{person.name}</p>
-                  <p>{person.role}</p>
-                </div>
-              );
+              return <PersonTile key={person.name} person={person} />;
             })}
           </div>
         </div>
@@ -153,13 +109,7 @@ export function BridalParty() {
           </Heading>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 col-span-2">
             {partyData.groom.map((person) => {
-              return (
-                <div key={person.name} className="flex flex-col gap-2 w-full">
-                  <img className="aspect-square w-full bg-pink opacity:100 lg:opacity-75 hover:opacity-100 focus:opacity-100 rounded" />
-                  <p>{person.name}</p>
-                  <p>{person.role}</p>
-                </div>
-              );
+              return <PersonTile key={person.name} person={person} />;
             })}
           </div>
         </div>
@@ -168,14 +118,20 @@ export function BridalParty() {
           <Heading level={3} size="xl" className="text-center">
             Officiant
           </Heading>
-          <div className="w-1/2 md:w-1/3 col-span-2">
-            {partyData.other.map((person) => {
-              return (
-                <div key={person.name} className="flex flex-col gap-2 w-full">
-                  <img className="aspect-square w-full bg-pink opacity:100 lg:opacity-75 hover:opacity-100 focus:opacity-100 rounded" />
-                  <p>{person.name}</p>
-                </div>
-              );
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 col-span-2">
+            {partyData.officiant.map((person) => {
+              return <PersonTile key={person.name} person={person} />;
+            })}
+          </div>
+        </div>
+
+        <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
+          <Heading level={3} size="xl" className="text-center">
+            The Awws
+          </Heading>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 col-span-2">
+            {partyData.others.map((person) => {
+              return <PersonTile key={person.name} person={person} />;
             })}
           </div>
         </div>
@@ -183,3 +139,22 @@ export function BridalParty() {
     </section>
   );
 }
+
+type Person = {
+  name: string;
+  photo: string;
+  role: string | null;
+};
+
+const PersonTile = ({ person }: { person: Person }) => {
+  return (
+    <div key={person.name} className="flex flex-col w-full">
+      <img
+        className="aspect-square w-full bg-pink opacity:100 lg:opacity-90 hover:opacity-100 focus:opacity-100 rounded"
+        src={person.photo}
+      />
+      <p className="font-light text-base mt-2">{person.name}</p>
+      {person.role ?? <p className="font-light text-sm">{person.role}</p>}
+    </div>
+  );
+};

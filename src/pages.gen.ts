@@ -8,11 +8,11 @@ import type { getConfig as Root_getConfig } from './pages/_root';
 // prettier-ignore
 import type { getConfig as Index_getConfig } from './pages/index';
 // prettier-ignore
-import type { getConfig as Itinerary_getConfig } from './pages/itinerary';
-// prettier-ignore
 import type { getConfig as OurStory_getConfig } from './pages/our-story';
 // prettier-ignore
 import type { getConfig as Rsvp_getConfig } from './pages/rsvp';
+// prettier-ignore
+import type { getConfig as Schedule_getConfig } from './pages/schedule';
 // prettier-ignore
 import type { getConfig as Travel_getConfig } from './pages/travel';
 
@@ -20,9 +20,9 @@ import type { getConfig as Travel_getConfig } from './pages/travel';
 type Page =
 | ({ path: '/_root' } & GetConfigResponse<typeof Root_getConfig>)
 | ({ path: '/' } & GetConfigResponse<typeof Index_getConfig>)
-| ({ path: '/itinerary' } & GetConfigResponse<typeof Itinerary_getConfig>)
 | ({ path: '/our-story' } & GetConfigResponse<typeof OurStory_getConfig>)
 | ({ path: '/rsvp' } & GetConfigResponse<typeof Rsvp_getConfig>)
+| ({ path: '/schedule' } & GetConfigResponse<typeof Schedule_getConfig>)
 | ({ path: '/travel' } & GetConfigResponse<typeof Travel_getConfig>);
 
 // prettier-ignore

@@ -3,7 +3,7 @@ import { ScreenWidthContainer } from './primitives/screen-width-container';
 
 export function Timeline() {
   return (
-    <section className="bg-pink-50 w-full" id="timeline">
+    <section className="bg-white w-full" id="timeline">
       <ScreenWidthContainer className="flex flex-col gap-10 lg:gap-10 items-center py-10 px-6">
         <Heading level={2} size="2xl" className="text-center col-span-1 w-full">
           Next steps
@@ -204,7 +204,7 @@ export function Timeline() {
                 <Heading level={3} size="lg">
                   RSVP
                 </Heading>
-                <p className="text-base">April, 2025</p>
+                <p className="text-base">Summer, 2025</p>
               </div>
             </div>
           </div>
