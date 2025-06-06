@@ -58,12 +58,7 @@ const questions = [
   },
   {
     question: 'Will there be any other events or activities?',
-    answer: `Yes! We will have a welcome dinner on Friday night (open to
-            everyone, including families) and a brunch on Sunday morning. We are
-            also planning a couple optional activities and excursions around the
-            city for Thursday or Friday, but that will depend on availability
-            and when everyone will be arriving. We will share more details as we
-            get closer to the wedding.`,
+    answer: `We will have a welcome dinner on Friday night, as well as a brunch Sunday morning that will be open to everyone, including families`,
   },
   {
     question: 'When should I plan to arrive?',
