@@ -1,5 +1,6 @@
 import { Link } from 'waku';
 import { Heading } from './primitives/heading';
+import { Menu } from './Menu';
 
 export const Header = () => {
   return (
@@ -25,7 +26,7 @@ export const Header = () => {
         </Link> */}
       </div>
       {/* mobile menu */}
-      <button className="lg:hidden">Menu</button>
+      <Menu />
     </header>
   );
 };
