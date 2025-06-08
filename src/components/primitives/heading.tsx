@@ -6,12 +6,14 @@ interface HeadingProps {
   className?: string;
   level: 1 | 2 | 3 | 4 | 5 | 6;
   size: 'sm' | 'base' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl';
+  id?: string;
 }
 export const Heading = ({
   children,
   className,
   level,
   size,
+  id,
   ...props
 }: HeadingProps) => {
   const classes = clsx(className, `font-heading`);
@@ -20,6 +22,7 @@ export const Heading = ({
     `h${level}`,
     {
       className: classes,
+      id,
       style: {
         fontSize: `var(--text-${size})`,
       },

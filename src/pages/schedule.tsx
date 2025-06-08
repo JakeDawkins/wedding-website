@@ -143,7 +143,7 @@ export default async function AboutPage() {
 
           <div className="flex flex-col">
             <div className="w-full border-l-2 border-l-black pl-2">
-              <p className="font-semibold">Welcome Dinner</p>
+              <p className="font-medium">Welcome Dinner</p>
               <p>6 - 9 PM, Location TBD</p>
               <p>Attire: Beach casual</p>
               <p className="mt-4">
@@ -164,7 +164,7 @@ export default async function AboutPage() {
 
           <div className="flex flex-col">
             <div className="w-full border-l-2 border-l-black pl-2">
-              <p className="font-semibold">Wedding Ceremony & Reception</p>
+              <p className="font-medium">Wedding Ceremony & Reception</p>
               <p>4:30 PM - 12:30 AM, La Baronia</p>
               <p>Attire: Festive</p>
               <p className="mt-4">
@@ -179,7 +179,7 @@ export default async function AboutPage() {
                 </span>
                 . Information about provided transportation and alternative
                 options can be found{' '}
-                <Link to="/travel" className="underline">
+                <Link to="/travel#transportation" className="underline">
                   here
                 </Link>
                 .
@@ -202,7 +202,7 @@ export default async function AboutPage() {
 
           <div className="flex flex-col">
             <div className="w-full border-l-2 border-l-black pl-2">
-              <p className="font-semibold">Brunch</p>
+              <p className="font-medium">Brunch</p>
               <p>10 AM - 12:30 PM, Location TBD</p>
               <p>Attire: Comfortable</p>
               <p className="mt-4">

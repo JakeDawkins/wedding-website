@@ -1,7 +1,13 @@
 import { Link } from 'waku';
-import { HomeFAQ } from '../components/home-faq';
 import { Heading } from '../components/primitives/heading';
 import { ScreenWidthContainer } from '../components/primitives/screen-width-container';
+import {
+  BeachBallIcon,
+  ConfettiIcon,
+  ForkKnifeIcon,
+  HeartIcon,
+  PaletteIcon,
+} from '@phosphor-icons/react/dist/ssr';
 
 export default async function AboutPage() {
   return (
@@ -171,13 +177,13 @@ export default async function AboutPage() {
               <p>
                 We are still working on arranging a block of rooms at a hotel in
                 Barcelona.{' '}
-                <span className="font-semibold">
+                <span className="font-medium">
                   We recommend waiting until we have more information before
                   booking your own accommodation separately
                 </span>
                 . We will update this page and send out an email with more
                 information as we get closer to the wedding.{' '}
-                <span className="font-semibold">
+                <span className="font-medium">
                   All shuttle busses will pick up from and drop off to the hotel
                 </span>
                 , so if you're not planning on staying at the hotel, you will be
@@ -220,7 +226,7 @@ export default async function AboutPage() {
                 increase. It may also mean that if you book an Airbnb that did
                 not register correctly with the city, the listing may be
                 removed. If you book an Airbnb, we{' '}
-                <span className="font-semibold">highly</span> encourage you to
+                <span className="font-medium">highly</span> encourage you to
                 reach out to the host to see what paperwork they have to confirm
                 their unit has been registered with the city.
               </p>
@@ -233,7 +239,7 @@ export default async function AboutPage() {
           </div>
         </div>
 
-        <Heading level={2} size="2xl">
+        <Heading level={2} size="2xl" id="transportation">
           Transportation
         </Heading>
 
@@ -253,7 +259,6 @@ export default async function AboutPage() {
             and Greece, and are reliable. All you need is your driver's license
             and a credit card.
           </p>
-          <p></p>
         </div>
 
         <Heading level={2} size="2xl">
@@ -262,250 +267,214 @@ export default async function AboutPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
           <div className="rounded-lg bg-pink-100 p-4 flex-1 flex flex-row gap-8 items-center">
-            <svg
-              className="h-12 w-12 flex-shrink-0"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 256 256"
-            >
-              <rect width="256" height="256" fill="none" />
-              <path
-                d="M40.49,205.52,93,61.14a7.79,7.79,0,0,1,12.84-2.85l91.88,91.88A7.79,7.79,0,0,1,194.86,163L50.48,215.51A7.79,7.79,0,0,1,40.49,205.52Z"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-              <path
-                d="M168,72s0-24,24-24,24-24,24-24"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-              <line
-                x1="144"
-                y1="16"
-                x2="144"
-                y2="40"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-              <line
-                x1="216"
-                y1="112"
-                x2="232"
-                y2="128"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-              <line
-                x1="216"
-                y1="80"
-                x2="240"
-                y2="72"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-              <line
-                x1="78.09"
-                y1="102.09"
-                x2="153.91"
-                y2="177.91"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-              <line
-                x1="101.11"
-                y1="197.11"
-                x2="58.89"
-                y2="154.89"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-            </svg>
+            <ConfettiIcon className="h-12 w-12 flex-shrink-0" />
             <div>
               <Heading level={3} size="xl">
                 Culture
               </Heading>
 
               <ul className="list-disc list-inside">
-                <li>Walking Tour</li>
-                <li>Hop on Hop off bus</li>
-                <li>La Sagrada Famila</li>
-                <li>Flamenco Show</li>
+                <li>
+                  <a
+                    href="https://www.guruwalk.com/barcelona"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Walking Tour
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.barcelonabusturistic.cat/en"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Hop-on hop-off bus
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://sagradafamilia.org/en/"
+                    target="_blank"
+                    className="underline"
+                  >
+                    La Sagrada Familia
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tablaoflamencobarcelona.com/"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Flamenco Show
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
 
           <div className="rounded-lg bg-pink-100 p-4 flex-1 flex flex-row gap-8 items-center">
-            <svg
-              className="h-12 w-12 flex-shrink-0"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 256 256"
-            >
-              <rect width="256" height="256" fill="none" />
-              <circle cx="156" cy="76" r="12" />
-              <path
-                d="M8,175.87l56.07,16.06,16,56.07,24-56.07C258.51,188.26,220,38.68,219,37c-1.73-1-151.25-39.46-155,114.9Z"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-              <path
-                d="M185.82,167.62A44,44,0,0,1,136.2,119.8,44,44,0,0,1,88.38,70.21"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-            </svg>
+            <ForkKnifeIcon className="h-12 w-12 flex-shrink-0" />
             <div>
               <Heading level={3} size="xl">
                 Food
               </Heading>
 
               <ul className="list-disc list-inside">
-                <li>Tapas Crawl</li>
-                <li>Cooking Class</li>
-                <li>Mercat de la Boqueria</li>
-                <li>Mercat de Sant Antoni</li>
+                <li>
+                  <a
+                    href="https://www.airbnb.com/experiences/51496?c=.pi0.pk21690586450_168862475244&gad_source=1&gad_campaignid=21690586450&gbraid=0AAAAAoNIxoOXv3KR3oRGBzIyXtAn2x3SQ&gclid=CjwKCAjw6ZTCBhBOEiwAqfwJd_l8Ih-npODmtxRuCOjPKOV3K70UfOhkvMFnT1TyVGlHm_Iz1p2nHRoCdbsQAvD_BwE&s=67&unique_share_id=2c41fa19-5453-40f7-820b-bc382bf9b706"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Tapas Crawl
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.bcnkitchen.com/en/cooking-classes/"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Cooking Class
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.boqueria.barcelona/home"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Mercat de la Boqueria
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://maps.app.goo.gl/qcwi4tk4Yj4hGdXA7"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Mercat de Sant Antoni
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
 
           <div className="rounded-lg bg-pink-100 p-4 flex-1 flex flex-row gap-8 items-center">
-            <svg
-              className="h-12 w-12 flex-shrink-0"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 256 256"
-            >
-              <rect width="256" height="256" fill="none" />
-              <path
-                d="M128,192a24,24,0,0,1,24-24h46.21a24,24,0,0,0,23.4-18.65A96.48,96.48,0,0,0,224,127.17c-.45-52.82-44.16-95.7-97-95.17a96,96,0,0,0-95,96c0,41.81,26.73,73.44,64,86.61A24,24,0,0,0,128,192Z"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-              <circle cx="128" cy="76" r="12" />
-              <circle cx="84" cy="100" r="12" />
-              <circle cx="84" cy="156" r="12" />
-              <circle cx="172" cy="100" r="12" />
-            </svg>
+            <PaletteIcon className="h-12 w-12 flex-shrink-0" />
             <div>
               <Heading level={3} size="xl">
                 Art
               </Heading>
 
               <ul className="list-disc list-inside">
-                <li>Picasso Museum</li>
-                <li>Palau Guell</li>
-                <li>Moco Museum</li>
+                <li>
+                  <a
+                    href="https://museupicassobcn.cat/en"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Picasso Museum
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://palauguell.cat/en"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Palau Guell
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://mocomuseum.com/barcelona/"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Moco Museum
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
 
           <div className="rounded-lg bg-pink-100 p-4 flex-1 flex flex-row gap-8 items-center">
-            <svg
-              className="h-12 w-12 flex-shrink-0"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 256 256"
-            >
-              <rect width="256" height="256" fill="none" />
-              <circle
-                cx="128"
-                cy="128"
-                r="96"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-              <path
-                d="M147.93,34.08a192.17,192.17,0,0,1-27.12,189.65"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-              <path
-                d="M32.27,135.19a192.17,192.17,0,0,1,189.65-27.12"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-              <path
-                d="M79.25,45.27a191.14,191.14,0,0,1,82.69,48.79,191.14,191.14,0,0,1,48.79,82.69"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-            </svg>
+            <BeachBallIcon className="h-12 w-12 flex-shrink-0" />
             <div>
               <Heading level={3} size="xl">
                 Nature
               </Heading>
 
               <ul className="list-disc list-inside">
-                <li>Park Guell</li>
-                <li>Barceloneta Beach</li>
-                <li>Bogatell Beach</li>
+                <li>
+                  <a
+                    href="https://parkguell.barcelona/en"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Park Guell
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://maps.app.goo.gl/1iF4Z1ejCHXQfrxe6"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Barceloneta Beach
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://maps.app.goo.gl/pKmcBTYsXEUy1cxt6"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Bogatell Beach
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
 
           <div className="rounded-lg bg-pink-100 p-4 flex-1 flex flex-row gap-8 items-center">
-            <svg
-              className="h-12 w-12 flex-shrink-0"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 256 256"
-            >
-              <rect width="256" height="256" fill="none" />
-              <path
-                d="M128,224S24,168,24,102A54,54,0,0,1,78,48c22.59,0,41.94,12.31,50,32,8.06-19.69,27.41-32,50-32a54,54,0,0,1,54,54C232,168,128,224,128,224Z"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              />
-            </svg>
+            <HeartIcon className="h-12 w-12 flex-shrink-0" />
             <div>
               <Heading level={3} size="xl">
                 Family
               </Heading>
 
               <ul className="list-disc list-inside">
-                <li>L&apos;Aquárium de Barcelona</li>
-                <li>Barcelona Zoo</li>
-                <li>Big Fun Museum</li>
+                <li>
+                  <a
+                    href="https://www.aquariumbcn.com/en/"
+                    target="_blank"
+                    className="underline"
+                  >
+                    L&apos;Aquárium de Barcelona
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.zoobarcelona.cat/en"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Barcelona Zoo
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://bigfunmuseum.com/en/"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Big Fun Museum
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
