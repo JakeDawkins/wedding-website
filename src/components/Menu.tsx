@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Link } from 'waku';
 import {
   CalendarIcon,
+  DressIcon,
   HeartIcon,
   HouseIcon,
   ListIcon,
@@ -61,6 +62,14 @@ export const Menu = () => {
               >
                 <CalendarIcon className="h-6 w-6 mr-2" />
                 Schedule
+              </Link>
+              <Link
+                to="/packing"
+                className="w-full p-6 flex items-center justify-center border border-black rounded-lg"
+                onClick={() => setIsOpen(false)}
+              >
+                <DressIcon className="h-6 w-6 mr-2" />
+                What to Bring
               </Link>
             </nav>
           </DialogPanel>

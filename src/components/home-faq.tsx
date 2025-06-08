@@ -11,9 +11,26 @@ import {
 const questions = [
   {
     question: 'What is the dress code?',
-    answer: `Festive! A cocktail dress code, but feel free to have a little more fun!
-            Wear your floral patterns, bright colors and fun accessories. No shorts,
-            no jeans, no t-shirts, and no open-toed shoes for men.`,
+    // answer: `Festive! A cocktail dress code, but feel free to have a little more fun!
+    //         Wear your floral patterns, bright colors and fun accessories. No shorts,
+    //         no jeans, no t-shirts, and no open-toed shoes for men.`,
+    answerComponent: () => {
+      return (
+        <>
+          <p>
+            Festive! A cocktail dress code, but feel free to have a little more
+            fun! Wear your floral patterns, bright colors and fun accessories.
+            No shorts, no jeans, no t-shirts, and no open-toed shoes for men.
+          </p>
+          <p>
+            For some examples, see{' '}
+            <Link to="/packing" className="underline">
+              What to Bring
+            </Link>
+          </p>
+        </>
+      );
+    },
   },
   {
     question: 'Are my kids welcome?',

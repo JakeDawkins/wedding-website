@@ -127,7 +127,7 @@ export function BridalParty() {
 
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
           <Heading level={3} size="xl" className="text-center">
-            The Awws
+            Essential Crew
           </Heading>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 col-span-2">
             {partyData.others.map((person) => {

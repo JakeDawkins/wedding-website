@@ -21,6 +21,9 @@ export const Header = () => {
         <Link to="/schedule" className="font-body font-light hover:underline">
           Schedule
         </Link>
+        <Link to="/packing" className="font-body font-light hover:underline">
+          What to Bring
+        </Link>
         {/* <Link to="/rsvp" className="font-body font-light hover:underline">
           RSVP
         </Link> */}
