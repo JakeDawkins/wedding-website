@@ -24,7 +24,7 @@ export default async function AboutPage() {
       <section className="bg-pink-50 w-full" id="timeline">
         <ScreenWidthContainer className="flex flex-col gap-10 lg:gap-10 items-center py-10 px-6">
           {/* When to arrive */}
-          <section className="flex flex-col px-6 gap-6">
+          <div className="flex flex-col gap-6">
             <Heading level={2} size="2xl">
               Dress Code
             </Heading>
@@ -74,7 +74,7 @@ export default async function AboutPage() {
                 />
               </div>
             </div>
-          </section>
+          </div>
         </ScreenWidthContainer>
       </section>
     </div>
