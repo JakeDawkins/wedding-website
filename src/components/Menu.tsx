@@ -24,7 +24,7 @@ export const Menu = () => {
         className="relative z-50"
       >
         <div className="fixed inset-0 flex w-screen items-center justify-center">
-          <DialogPanel className="w-full h-full space-y-4 border bg-pink-50 py-4 px-6 flex flex-col">
+          <DialogPanel className="w-full h-full space-y-4 bg-pink-50 py-4 px-6 flex flex-col">
             <button
               className="self-end inline text-end"
               onClick={() => setIsOpen(false)}
