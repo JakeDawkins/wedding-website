@@ -82,6 +82,29 @@ export default async function AboutPage() {
                 are recommended for anyone planning to wear a heeled shoe.
               </p>
             </div>
+            <div className="flex flex-col md:flex-row gap-4 mt-4 items-center">
+              <img
+                src="/images/hero.jpeg"
+                className="w-full md:max-w-[500px] max-h-[300px] object-cover rounded-lg"
+              />
+              <div className="w-full lg:w-1/2">
+                <Heading level={3} size={'lg'}>
+                  The venue
+                </Heading>
+                <p>
+                  La Baronia (pronounced "bar-oh-KNEE-uh") is a beautiful venue
+                  located outside of Barcelona. A modernist work by a disciple
+                  of Antoni Gaudí, this old home is a stunning estate on the
+                  mountainside with beautiful sights all around. We'll be
+                  celebrating on the beautiful grounds approaching and right
+                  after sunset, so come prepared to take photos!{' '}
+                  <a href="https://www.labaronia.net/" className="underline">
+                    Read more about the venue on their website
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
           </div>
         </ScreenWidthContainer>
       </section>
