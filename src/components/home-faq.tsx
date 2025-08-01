@@ -76,6 +76,10 @@ const questions = [
   {
     question: 'Will there be any other events or activities?',
     answer: `We will have a welcome dinner on Friday night, as well as a brunch Sunday morning that will be open to everyone, including families`,
+    link: {
+      title: 'Schedule',
+      url: '/schedule',
+    },
   },
   {
     question: 'When should I plan to arrive?',

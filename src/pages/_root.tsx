@@ -1,3 +1,9 @@
+/**
+ * Design based on
+ * https://kellyryann.com/portfolio
+ * https://dribbble.com/shots/22138719-Wedding-Photography-Portfolio-Website
+ */
+
 export default async function RootElement({
   children,
 }: {

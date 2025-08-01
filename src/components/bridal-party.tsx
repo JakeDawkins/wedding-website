@@ -16,17 +16,17 @@ const partyData = {
     {
       name: 'Lauren Jachimczyk',
       photo: '/images/party/lauren.jpeg',
-      role: null,
+      role: 'Bridesmaid',
     },
     {
       name: 'Christine Gaudet',
       photo: '/images/party/christine.jpeg',
-      role: null,
+      role: 'Bridesmaid',
     },
     {
       name: 'Melissa Gaudet',
       photo: '/images/party/melissa.jpeg',
-      role: null,
+      role: 'Bridesmaid',
     },
   ],
   groom: [
@@ -38,22 +38,22 @@ const partyData = {
     {
       name: 'Davis Fortier',
       photo: '/images/party/davis.jpeg',
-      role: null,
+      role: 'Groomsman',
     },
     {
       name: 'Ethan Lander',
       photo: '/images/party/ethan.jpeg',
-      role: null,
+      role: 'Groomsman',
     },
     {
       name: 'Brian Gaudet',
       photo: '/images/party/brian.jpeg',
-      role: null,
+      role: 'Groomsman',
     },
     {
       name: 'Jonathan Gaudet',
       photo: '/images/party/jonathan.jpeg',
-      role: null,
+      role: 'Groomsman',
     },
   ],
   officiant: [

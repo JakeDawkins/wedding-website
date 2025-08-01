@@ -204,7 +204,7 @@ export function Timeline() {
                 <Heading level={3} size="lg">
                   RSVP
                 </Heading>
-                <p className="text-base">Summer, 2025</p>
+                <p className="text-base">Coming soon!</p>
               </div>
             </div>
           </div>
@@ -474,9 +474,12 @@ export function Timeline() {
           </div>
           <div className="w-[75px] border-t border-t-pink" />
           <p className="font-body font-light text-base">
-            We will be planning some events around the day of the wedding,
-            including a welcome dinner and other activities. More information
-            will be sent out as we put together the schedule.
+            We're still finalizing some plans and getting some more information
+            on events and venues surrounding the wedding, but{' '}
+            <a href="/schedule" className="underline">
+              you can look at the schedule here
+            </a>
+            .
           </p>
         </div>
       </ScreenWidthContainer>
