@@ -11,10 +11,12 @@ export default async function AboutPage() {
           Our Story
         </Heading>
         <section className="flex flex-col lg:flex-row gap-10 items-center">
-          <img
-            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden lg:rounded max-w-full"
-            src="/images/story-1.jpeg"
-          />
+          <div className="flex-1 w-full aspect-square relative overflow-hidden md:rounded-2xl">
+            <img
+              className="absolute inset-0 bg-pink-100 object-cover h-full w-full"
+              src="/images/story-1.jpeg"
+            />
+          </div>
           <div className="flex-1 px-6 lg:px-0">
             <p className="text-pink-500">January 2022</p>
             <Heading level={3} size="xl">
@@ -56,20 +58,24 @@ export default async function AboutPage() {
               bar, this one seemed to be going the best.
             </p>
           </div>
-          <img
-            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden lg:rounded"
-            src="/images/story-2.jpeg"
-          />
+          <div className="flex-1 w-full aspect-square relative overflow-hidden md:rounded-2xl">
+            <img
+              className="absolute inset-0 bg-pink-100 object-cover h-full w-full"
+              src="/images/story-2.jpeg"
+            />
+          </div>
         </section>
 
         <div className="hidden lg:flex w-full items-center justify-center py-10">
           <div className="w-[100px] border-t-1 border-t-pink" />
         </div>
         <section className="flex flex-col lg:flex-row gap-10 items-center">
-          <img
-            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden lg:rounded"
-            src="/images/story-3.jpeg"
-          />
+          <div className="flex-1 w-full aspect-square relative overflow-hidden md:rounded-2xl">
+            <img
+              className="absolute inset-0 bg-pink-100 object-cover h-full w-full"
+              src="/images/story-3.jpeg"
+            />
+          </div>
           <div className="flex-1 px-6 lg:px-0">
             <p className="text-pink-500">May 2024</p>
             <Heading level={3} size="xl">
@@ -110,10 +116,12 @@ export default async function AboutPage() {
               proposed to Emily, who through her tears of joy, said yes!
             </p>
           </div>
-          <img
-            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden lg:rounded"
-            src="/images/story-4.jpeg"
-          />
+          <div className="flex-1 w-full aspect-square relative overflow-hidden md:rounded-2xl">
+            <img
+              className="absolute inset-0 bg-pink-100 object-cover h-full w-full"
+              src="/images/story-4.jpeg"
+            />
+          </div>
         </section>
       </ScreenWidthContainer>
     </div>
