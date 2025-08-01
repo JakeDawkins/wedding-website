@@ -107,6 +107,17 @@ const questions = [
     },
   },
   {
+    question: 'Traveling to Barcelona sounds like a lot. I need help!',
+    answer: `We've put together some more info on travel to Barcelona, including 
+            information on getting around, accommodations, and more. We will also 
+            be sending out more info as we get closer. When in doubt, ask us for 
+            help! We live in Spain now, and are happy to send additional advice or tips.`,
+    link: {
+      title: 'Travel Info',
+      url: '/travel',
+    },
+  },
+  {
     question: 'What will the weather be like?',
     answer: `The weather in Barcelona in June is typically warm and sunny, with
             temperatures ranging from the mid-60s to the mid-70s Fahrenheit
@@ -122,6 +133,14 @@ const questions = [
     question: 'Will the ceremony and reception be indoors or outdoors?',
     answer: `The ceremony and reception will be outdoors at the venue. In case of
             rain or extremely warm weather, we will move events indoors.`,
+  },
+  {
+    question: 'What should I bring?',
+    answer: `We've put together a list of what to bring and what to leave at home.`,
+    link: {
+      title: 'What to Bring',
+      url: '/packing',
+    },
   },
   {
     question: 'How will we get around?',
