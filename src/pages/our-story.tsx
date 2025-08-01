@@ -12,7 +12,7 @@ export default async function AboutPage() {
         </Heading>
         <section className="flex flex-col lg:flex-row gap-10 items-center">
           <img
-            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden lg:rounded"
+            className="aspect-square bg-pink-100 flex-1 object-cover overflow-hidden lg:rounded max-w-full"
             src="/images/story-1.jpeg"
           />
           <div className="flex-1 px-6 lg:px-0">
