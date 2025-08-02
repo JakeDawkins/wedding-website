@@ -123,7 +123,7 @@ export default async function AboutPage() {
                 >
                   you can follow this guide
                 </a>
-                .
+                . Most hotel rooms will have a hair dryer.
               </li>
               <p className="rounded-lg bg-pink-100 p-4">
                 <strong>Important</strong>: an adapter (like we linked to above)
