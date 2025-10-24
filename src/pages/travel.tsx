@@ -75,11 +75,11 @@ export default async function AboutPage() {
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-10">
-              {/* NH */}
+              {/* Catalonia */}
               <div className="border rounded-lg bg-pink-100 p-4 flex-1 flex flex-row gap-8">
                 <div className="flex flex-col gap-4 w-full">
                   <Heading level={4} size="xl">
-                    NH Barcelona Diagonal Mar
+                    Catalonia Barcelona Beach Hotel
                   </Heading>
 
                   <div className="flex gap-3">
@@ -94,48 +94,6 @@ export default async function AboutPage() {
                       staying, and shuttle pickups will depart from here!
                     </p>
                   </div>
-
-                  <ul className="list-disc pl-4 flex flex-col gap-1">
-                    <li>
-                      <a
-                        href="https://www.nh-hotels.com/en/hotel/nh-barcelona-diagonal-center?utm_campaign=local-gmb&utm_medium=organic_search&utm_source=google_gmb"
-                        className="underline"
-                        target="_blank"
-                      >
-                        Website <ArrowSquareOutIcon className="inline ml-1" />
-                      </a>
-                    </li>
-                    <li>
-                      <span className="">Price est:</span> $220/night
-                    </li>
-                    <li>
-                      <span className="">Address</span>:{' '}
-                      <a
-                        className="underline"
-                        href="https://maps.app.goo.gl/zSNMmmYWJCvoVTnS7"
-                        target="_blank"
-                      >
-                        Carrer d'Àlaba, 94, 96, Sant Martí, 08018 Barcelona{' '}
-                        <ArrowSquareOutIcon className="inline ml-1" />
-                      </a>{' '}
-                    </li>
-                  </ul>
-
-                  <a
-                    href="nh-hotels.com/en/booking/step1-rates?fini=19%2F06%2F2026&fout=21%2F06%2F2026&nadults1=2&nchilds1=0&nbabies1=0&hotelId=ESBA.DIAGO&gvoucher=false&bdhotel=NH%20Hotels"
-                    className="w-full lg:w-fit ring rounded p-2 px-4 flex justify-center items-center cursor-pointer hover:bg-pink-200"
-                  >
-                    Book here
-                    <ArrowSquareOutIcon className="inline ml-1" />
-                  </a>
-                </div>
-              </div>
-              {/* Catalonia */}
-              <div className="border rounded-lg bg-pink-100 p-4 flex-1 flex flex-row gap-8">
-                <div className="flex flex-col gap-4 w-full">
-                  <Heading level={4} size="xl">
-                    Catalonia Barcelona Beach Hotel
-                  </Heading>
 
                   <ul className="list-disc pl-4 flex flex-col gap-1">
                     <li>
@@ -172,6 +130,50 @@ export default async function AboutPage() {
                   </a>
                 </div>
               </div>
+
+              {/* NH */}
+              <div className="border rounded-lg bg-pink-100 p-4 flex-1 flex flex-row gap-8">
+                <div className="flex flex-col gap-4 w-full">
+                  <Heading level={4} size="xl">
+                    NH Barcelona Diagonal Mar
+                  </Heading>
+
+                  <ul className="list-disc pl-4 flex flex-col gap-1">
+                    <li>
+                      <a
+                        href="https://www.nh-hotels.com/en/hotel/nh-barcelona-diagonal-center?utm_campaign=local-gmb&utm_medium=organic_search&utm_source=google_gmb"
+                        className="underline"
+                        target="_blank"
+                      >
+                        Website <ArrowSquareOutIcon className="inline ml-1" />
+                      </a>
+                    </li>
+                    <li>
+                      <span className="">Price est:</span> $220/night
+                    </li>
+                    <li>
+                      <span className="">Address</span>:{' '}
+                      <a
+                        className="underline"
+                        href="https://maps.app.goo.gl/zSNMmmYWJCvoVTnS7"
+                        target="_blank"
+                      >
+                        Carrer d'Àlaba, 94, 96, Sant Martí, 08018 Barcelona{' '}
+                        <ArrowSquareOutIcon className="inline ml-1" />
+                      </a>{' '}
+                    </li>
+                  </ul>
+
+                  <a
+                    href="nh-hotels.com/en/booking/step1-rates?fini=19%2F06%2F2026&fout=21%2F06%2F2026&nadults1=2&nchilds1=0&nbabies1=0&hotelId=ESBA.DIAGO&gvoucher=false&bdhotel=NH%20Hotels"
+                    className="w-full lg:w-fit ring rounded p-2 px-4 flex justify-center items-center cursor-pointer hover:bg-pink-200"
+                  >
+                    Book here
+                    <ArrowSquareOutIcon className="inline ml-1" />
+                  </a>
+                </div>
+              </div>
+
               {/* The social hub */}
               <div className="border rounded-lg bg-pink-100 p-4 flex-1 flex flex-row gap-8">
                 <div className="flex flex-col gap-4 w-full">
