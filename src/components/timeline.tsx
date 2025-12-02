@@ -66,7 +66,7 @@ export function Timeline() {
               {/* Title and subtitle on the right */}
               <div className="flex w-full flex-col">
                 <Heading level={3} size="lg">
-                  Start saving up for travel expenses
+                  Keep saving up for travel expenses
                 </Heading>
                 <p className="text-base">As soon as possible</p>
               </div>
@@ -143,7 +143,7 @@ export function Timeline() {
         </div>
 
         {/* Timeline item */}
-        <div className="flex flex-col gap-4 col-span-2">
+        <div className="flex flex-col gap-4 col-span-2 bg-pink-50 p-4 rounded-[8px] border border-pink">
           {/* item heading */}
           <div className="flex flex-row">
             <div className="flex flex-row gap-4">
@@ -202,18 +202,20 @@ export function Timeline() {
               {/* Title and subtitle on the right */}
               <div className="flex w-full flex-col">
                 <Heading level={3} size="lg">
-                  RSVP
+                  Respond to RSVPs
                 </Heading>
-                <p className="text-base">Coming soon!</p>
+                <p className="text-base">Please respond by Feb 20, 2026</p>
               </div>
             </div>
           </div>
           <div className="w-[75px] border-t border-t-pink" />
           <p className="font-body font-light text-base">
-            We're still finalizing some plans and getting some more information
-            on how best to plan for accommodations and travel, but once we have
-            more information, we'll be sending out RSVPs. When you receive
-            yours, please try to answer as soon as possible!
+            You should have an RSVP from Paperless Post in your inbox! If you
+            received a save the date but can't find your RSVP, please let us
+            know. We know planning for the trip and time off requests may take
+            some time, but please let us know as soon as you can if you can make
+            it!{' '}
+            <span className="font-normal">All RSVPs due by February 20th</span>.
           </p>
         </div>
 
@@ -251,16 +253,16 @@ export function Timeline() {
           </div>
           <div className="w-[75px] border-t border-t-pink" />
           <p className="font-body font-light text-base">
-            Plane tickets are the most expensive part of the trip, so we'll be
-            working to find the best deals. Please plan to book your tickets
-            well in advance though, as tickets will only get more expensive as
-            the trip approaches. We will be sending out more information on this
-            later.
+            Plane tickets are the most expensive part of the trip, and the best
+            time to purchase may be different depending on what airport you're
+            flying from or other travel plans you may have before or after the
+            wedding. The best piece of advice we can give is to buy tickets as
+            soon as you reasonably can. Don't wait for the "perfect" deal!
           </p>
         </div>
 
         {/* Timeline item */}
-        <div className="flex flex-col gap-4 col-span-2">
+        <div className="flex flex-col w-full gap-4 col-span-2">
           {/* item heading */}
           <div className="flex flex-row">
             <div className="flex flex-row gap-4">
@@ -317,15 +319,21 @@ export function Timeline() {
                 <Heading level={3} size="lg">
                   Book accommodations
                 </Heading>
-                <p className="text-base">TBD</p>
+                <p className="text-base">As soon as possible</p>
               </div>
             </div>
           </div>
           <div className="w-[75px] border-t border-t-pink" />
           <p className="font-body font-light text-base">
-            We will be searching for the best deals on accommodations, and are
-            planning on booking a block of hotel rooms. We will send out more
-            information about this as we learn more.
+            We have searched the area and contacted hotels and have
+            recommendations listed on the{' '}
+            <a href="/travel" className="underline">
+              Travel
+            </a>{' '}
+            page. The hotels in the area generally aren't very large, so we
+            can't guarantee a room will be available for everyone at one hotel.
+            If you'd like to stay at the hotel where the shuttle will pick up
+            from, we suggest booking soon (even before flights).
           </p>
         </div>
 
